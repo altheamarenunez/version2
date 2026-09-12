@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1.5rem;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 3px solid #f5c542;
+    outline-offset: 4px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #243b53;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+#about p {
+    max-width: 800px;
+}
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+#skills li {
+    padding: 0.5rem;
+}
+
+#projects {
+    display: grid;
+    gap: 1rem;
+}
+
+article {
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+}
+
+article h3 {
+    color: #243b53;
+    margin-top: 0;
+}
+
+article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact */
+#contact a {
+    color: #1d4f91;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact a:focus {
+    outline: 3px solid #f5c542;
+    outline-offset: 3px;
+}
+footer {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 1.3rem;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+}
